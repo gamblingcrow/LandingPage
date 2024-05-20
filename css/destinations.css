@@ -1,56 +1,60 @@
-.destinations {
-    padding: 40px 20px;
-    text-align: center;
-  }
-  
-  .destinations h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-.destinations-description {
-    display: flex;
-    gap: 20px;
+main {
+  padding: 2rem;
 }
 
-  .destinations-description p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    text-align: left;
-    padding-left: 3%;
-    padding-right: 3%;
-    flex: 1;
-  }
-  
-  .destinations-list {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .destination-item {
-    width: 200px;
-    text-align: center;
-  }
-  
-  .destination-item img {
-    width: 100%;
-    border-radius: 10px;
-  }
-  
-  .destination-name {
-    margin-top: 10px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+.destinations {
+  text-align: center;
+}
+
+.destinations-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-top: 2rem;
+}
+
+.destinations-grid article {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.destinations-grid img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.destinations-grid h3 {
+  margin: 0.5rem 0;
+}
+
+.destinations-grid p {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+
+/* Add this to each of your CSS files or create a separate responsive.css file */
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .header-container {
+      grid-template-columns: 1fr;
+      text-align: center;
   }
 
-  @media (max-width: 768px) {
-    .destinations-description {
-      flex-direction: column;
-    }
+  .hero form {
+      grid-template-columns: 1fr;
   }
-  
-  
+
+  footer {
+      grid-template-columns: 1fr;
+  }
+
+  .footer-links ul {
+      display: grid;
+      gap: 0.5rem;
+  }
+}
