@@ -1,0 +1,122 @@
+#destinations {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.destinations {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  margin-top: 30px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.destination {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.destination img {
+  object-fit: cover;
+  max-height: 240px;
+  overflow: hidden;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.destination:hover img {
+  transform: scale(1.1);
+}
+
+.destination .location {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  color: white;
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+  padding: 20px 0;
+}
+
+.destination .location strong {
+  font-family: 'Dancing Script', cursive;
+  font-size: 24px;
+}
+
+.destination .location .country {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+@media screen and (min-width: 768px) {
+  .destinations {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .destination {
+    border-radius: 0;
+  }
+
+  .destination:nth-of-type(1) {
+    border-radius: 1rem 0 0 0;
+  }
+
+  .destination:nth-of-type(4) {
+    border-radius: 0 1rem 0 0;
+  }
+
+  .destination:nth-of-type(9) {
+    border-radius: 0 0 0 1rem;
+  }
+
+  .destination:nth-of-type(12) {
+    border-radius: 0 0 1rem 0;
+  }
+
+  .destination img {
+    max-height: none;
+  }
+
+  .destination .location strong {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .destination:nth-of-type(1),
+  .destination:nth-of-type(2),
+  .destination:nth-of-type(3),
+  .destination:nth-of-type(4),
+  .destination:nth-of-type(9),
+  .destination:nth-of-type(10),
+  .destination:nth-of-type(11),
+  .destination:nth-of-type(12) {
+    border-radius: 0;
+  }
+
+  .destination:nth-of-type(1) {
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .destination:nth-of-type(4) {
+    border-radius: 0 1rem 0 0;
+  }
+
+  .destination:nth-of-type(9) {
+    border-radius: 0 0 0 1rem;
+  }
+
+  .destination:nth-of-type(12) {
+    border-radius: 0 0 1rem 0;
+  }
+}
+
+.destination-link {
+  text-decoration: none;
+  color: inherit;
+}

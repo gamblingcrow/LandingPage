@@ -1,0 +1,63 @@
+#destination-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding: 30px;
+}
+
+.destination-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100ch;
+    width: 100%;
+}
+
+.container-photo {
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.destination-description p {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.back-to-gallery{
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 10px;
+
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #destination-info {
+        padding: 20px;
+    }
+
+    .destination-description {
+        padding: 0 10px;
+    }
+
+    .destination-description p {
+        font-size: 16px;
+    }
+
+    .container-photo {
+        margin: 10px 0;
+    }
+}
