@@ -11,10 +11,6 @@
 <body>
     <header class="site-header">
         <div class="header-top">
-          <form method="get">
-            <img src="/icons/search-white.svg" alt="Search">
-            <input type="text" placeholder="Search">
-          </form>
             <img src="icons/search-white.svg" alt="Search" class="header-icon">
             <img src="icons/globe-white.svg" alt="Logo" class="header-logo">
             <img src="icons/three-bars-white.svg" alt="Menu" class="header-icon">
@@ -22,34 +18,20 @@
         <div class="header-content">
             <div class="header-tagline">Year Long Travel</div>
             <h1 class="header-title">Book your next destination</h1>
-            <form>
-              <div>
-                <label>Destination</label>
-                <select>
-                  <option value="" selected disabled>Select destination</option>
-                  <option value="paris">Paris</option>
-                  <option value="tokyo">Tokyo</option>
-                  <option value="sydney">Sydney</option>
-                  <option value="san-francisco">San Francisco</option>
+            <form class="booking-form">
+                <select class="form-control">
+                    <option>Select destination</option>
+                    <option>Paris</option>
+                    <option>Tokyo</option>
+                    <option>Sydney</option>
+                    <option>San Francisco</option>
                 </select>
-              </div>
-              <div>
-                <label>From</label>
-                <input type="date" placeholder="From">
-              </div>
-              <div>
-                <label>To</label>
-                <input type="date" placeholder="To">
-              </div>
-              <div>
-                <label>Guests</label>
-                <input type="number" value="2">
-              </div>
-              <div>
-                <button type="submit">
-                  <img src="/icons/arrow-right.svg" alt="arrow">
+                <input type="date" class="form-control" placeholder="From">
+                <input type="date" class="form-control" placeholder="To">
+                <input type="number" class="form-control" placeholder="Guests" min="1" max="10" value="2">
+                <button type="submit" class="btn btn-submit">
+                    <img src="icons/arrow-right-white.svg" alt="Submit">
                 </button>
-              </div>
             </form>
         </div>
     </header>
@@ -80,10 +62,8 @@
             </div>
             <div class="destinations-grid">
                 <div class="destination-item">
-                    <a href="individual-destination.html">
-                        <img src="images/destinations/paris.jpg" alt="Paris">
-                        <div class="destination-name">Paris, France</div>
-                    </a>
+                    <img src="images/destinations/paris.jpg" alt="Paris">
+                    <div class="destination-name">Paris, France</div>
                 </div>
                 <div class="destination-item">
                     <img src="images/destinations/san-francisco.jpg" alt="San Francisco">
@@ -103,10 +83,10 @@
     <footer class="site-footer">
         <div class="footer-links">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="destinations-gallery.html">Destinations</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </div>
         <div class="footer-newsletter">
